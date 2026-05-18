@@ -1,0 +1,31 @@
+export function cmdHelp() {
+  return [
+    { type: 'head', text: 'available commands' },
+    { type: 'br' },
+    { type: 'cmd-table', rows: [
+      ['whoami', 'quick one-liner'],
+      ['about', 'background and what drives me'],
+      ['now', "what I'm working on right now"],
+      ['projects', 'list all projects'],
+      ['projects refugeeroutes', 'migration analytics platform'],
+      ['projects captioning', 'dual-attention image captioning'],
+      ['projects rag', 'mental health RAG chatbot'],
+      ['projects facemask', 'CNN face mask detector'],
+      ['skills', 'tech stack with proficiency bars'],
+      ['skills --filter ml', 'filter to ML skills only'],
+      ['skills --filter fullstack', 'filter to full-stack skills'],
+      ['education', 'degree, CGPA, coursework'],
+      ['experience', 'salesforce · amazon · leadership'],
+      ['achievements', 'awards, certifications, programs'],
+      ['contact', 'email, github, linkedin, leetcode'],
+      ['hire', 'why work with me'],
+      ['ls', 'filesystem overview'],
+      ['ls projects', 'list project files'],
+      ['cd projects', 'navigate into projects/'],
+      ['cat <file>.md', 'open about, achievements, or any project'],
+      ['clear', 'wipe the terminal'],
+    ]},
+    { type: 'br' },
+    { type: 'dim', text: 'tab → autocomplete · ↑↓ → history · click chips → instant run' },
+  ];
+}
