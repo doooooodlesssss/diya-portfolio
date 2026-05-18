@@ -1,7 +1,7 @@
 export const ME = {
   name: 'Diya Bangera',
   email: 'bangera.diya@gmail.com',
-  phone: '+91-9711642292',
+  phone: 'aa',
   github: 'github.com/doooooodlesssss',        // ← fill in
   linkedin: 'linkedin.com/in/diyabangera', // ← fill in
   leetcode: 'leetcode.com/YOUR_HANDLE',    // ← fill in
