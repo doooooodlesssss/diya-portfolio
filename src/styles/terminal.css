@@ -37,6 +37,8 @@ html, body, #root {
     flex-direction: column;
     width: min(960px, 100%);
     height: min(720px, 100%);
+    min-width: min(960px, 100%); 
+    max-width: min(960px, 100%); 
     background: var(--bg);
     border: 0.5px solid rgba(255,220,150,0.18);
     border-radius: 10px;
@@ -45,31 +47,23 @@ html, body, #root {
       0 32px 80px rgba(0,0,0,0.7),
       0 0 60px rgba(232,200,122,0.04);
     overflow: hidden;
-  
-    /* opening animation */
-    animation: terminalOpen 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: terminalOpen 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     transform-origin: center center;
   }
   
   @keyframes terminalOpen {
     0% {
       opacity: 0;
-      transform: scale(0.88) translateY(16px);
-      box-shadow:
-        0 0 0 1px rgba(0,0,0,0.6),
-        0 8px 20px rgba(0,0,0,0.5),
-        0 0 0px rgba(232,200,122,0);
+      transform: scale(0.92) translateY(12px);
+      clip-path: inset(4% 2% round 10px);
     }
-    60% {
+    40% {
       opacity: 1;
     }
     100% {
       opacity: 1;
       transform: scale(1) translateY(0);
-      box-shadow:
-        0 0 0 1px rgba(0,0,0,0.6),
-        0 32px 80px rgba(0,0,0,0.7),
-        0 0 60px rgba(232,200,122,0.04);
+      clip-path: inset(0% 0% round 10px);
     }
   }
 
@@ -126,9 +120,9 @@ html, body, #root {
 .skill-fill.mid { background: var(--amber-dim); }
 .skill-fill.low { background: var(--text-dim); }
 
-.cmd-table { border-collapse: collapse; width: 100%; margin: 4px 0; }
-.cmd-table td { padding: 3px 16px 3px 0; vertical-align: top; }
-.cmd-table td:first-child { color: var(--amber); min-width: 200px; white-space: nowrap; }
+.cmd-table { border-collapse: collapse; width: 100%; margin: 4px 0; table-layout: fixed; }
+.cmd-table td { padding: 3px 16px 3px 0; vertical-align: top; word-break: break-word; }
+.cmd-table td:first-child { color: var(--amber); min-width: 160px; max-width: 200px; white-space: nowrap; }
 .cmd-table td:last-child { color: var(--text-dim); }
 
 .rule { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
