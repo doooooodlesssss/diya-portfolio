@@ -13,7 +13,7 @@ export function cmdSkills(filter) {
     : SKILLS;
 
   const lines = [
-    { type: 'head', text: filter ? `skills — ${filter}` : 'skills & tech stack' },
+    // { type: 'head', text: filter ? `skills — ${filter}` : 'skills & tech stack' },
     { type: 'br' },
   ];
 

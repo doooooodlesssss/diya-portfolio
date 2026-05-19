@@ -1,12 +1,56 @@
 import { ME } from '../data/resume.js';
 
+// export function cmdWhoami() {
+//   return [
+//     { type: 'cream', text: `I'm a comp science major with a minor in AI at NSUT Delhi. 
+//     I like to build ML systems and full-stack platforms that solve real problems. 
+//     Top 100 @ Salesforce Futureforce.` },
+//     { type: 'br' },
+//     { type: 'hints', chips: ['about','projects','achievements'] },
+//   ];
+// }
+
 export function cmdWhoami() {
   return [
-    { type: 'cream', text: `${ME.name} — CS + AI student at NSUT Delhi. I build ML systems and full-stack platforms that solve real problems. Top 100 @ Salesforce Futureforce out of 50,000+ applicants.` },
+    {
+      type: 'cream',
+      text: `
+      <pre class="ascii-art">
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%############%
+      @@@@@@@@@@@@@@%@%%@@@%%%*#@@@%%%%%%%##%@@@%%@@
+      @@@@@@@@@@%*==::.      :-  #@@@@%%%%%%@@@@@@@@
+      @@@@@@@@@%+=:.. -- :+ .+=-  .*%%@@@%#*-: *@@@@
+      @@@@@@@@%+=.  =:  :: :@@@@%*..=@@@%++=:-@@@@@@
+      @@@@@@@@*+#:.-:   .  -#@@@%#*  .==:  -@@@@@@@@
+      @@@@@@@@%+=..     : .*#%+++      =-+*@@@+%@@@@
+      @@@@@@@+:.. .     : .*=  :@@++=  -*=#@@@%@@@%+
+      @@@%+:.:*@@@+.         :*@@@@@#: :=*%*+*%-=-:-
+      @%+-.:.-+@@@#.     .-=*@@%*-::=:  .-%*%+--=-..
+      +-:.   :-:  =:       .:=**#+:.:  -:+%%%*+-**#-
+      ::    .--  .+.         .:::::=+.  .#*+:.-%#.+%
+      @#%@#@@@%%@%:.:.         .:-:   .  :   .::*%#@
+      @@%*@@%#*=-.:. .:      :         :%@*#**-=-=#%
+      --===++**%@*++: :::   +@@#-=-::  -@@@@@@@@#:#@
+      ++#%@@@@#::==. .:.  .+@@@%@@@@@@+-%@@@@@@@@@@@
+      @@%####*-   -: ..   =@@@@@@@@@@@@*=@@@@@@@@@@@
+      </pre>
+      `
+    },
+
+    {
+      type: 'cream',
+      text: `Hi! I'm a comp science major with a minor in AI at NSUT Delhi.
+      I like to build ML systems and full-stack platforms that solve real problems.
+      Top 100 @ Salesforce Futureforce.`
+    },
+
     { type: 'br' },
-    { type: 'hints', chips: ['about','projects','achievements'] },
+    { type: 'hints', chips: ['about', 'projects', 'achievements'] },
   ];
 }
+
+
+
 
 export function cmdAbout() {
   return [

@@ -2,16 +2,16 @@ export const ME = {
   name: 'Diya Bangera',
   email: 'bangera.diya@gmail.com',
   phone: 'aa',
-  github: 'github.com/doooooodlesssss',        // ← fill in
-  linkedin: 'linkedin.com/in/diyabangera', // ← fill in
-  leetcode: 'leetcode.com/YOUR_HANDLE',    // ← fill in
+  github: 'github.com/doooooodlesssss',        
+  linkedin: 'linkedin.com/in/diyabangera', 
+  leetcode: 'leetcode.com/YOUR_HANDLE',    
 };
 
 export const NOW = {
-  building: 'Preparing for Salesforce AMTS internship — brushing up on system design and Apex',
-  reading: 'Designing Data-Intensive Applications — Kleppmann',
-  thinking: 'Why most RAG pipelines fail in production and what grounding actually requires',
-  next: 'Submit BTP paper draft by end of month',
+  building: 'Preparing for the Salesforce AMTS internship (imposter syndrome is hard)',
+  reading: 'Norwegian Wood by Murakami (umm-)',
+  thinking: 'Whats trending on Moltbook rn',
+  next: 'Submit BTP paper draft by eom',
   updated: 'May 2026',
 };
 // ↑ Update this every month. It's the signal that you're alive and working.
@@ -81,10 +81,12 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { label: 'languages', items: [['Python',90],['C++',85],['TypeScript / JavaScript',78],['SQL',72]] },
-  { label: 'ml & deep learning', items: [['PyTorch',85],['TensorFlow / Keras',82],['HuggingFace Transformers',80],['LangChain / RAG',78],['FAISS / vector search',76]] },
+  { label: 'languages', items: [['Python',90],['C++ (<3)',95],['TypeScript / JavaScript',78],['SQL',72]] },
+  // { label: 'ml & deep learning', items: [['PyTorch',85],['TensorFlow / Keras',82],['HuggingFace Transformers',80],['LangChain / RAG',78],['FAISS / vector search',76]] },
+  { label: 'ml & deep learning', items: [['PyTorch',85],['TensorFlow / Keras',82],['HuggingFace Transformers',80],['LangChain / RAG',78]] },
   { label: 'full-stack & data', items: [['React.js + MUI',78],['Node.js / REST APIs',75],['MongoDB + aggregation',80],['AWS',60]] },
-  { label: 'tools', items: [['Git',88],['OpenCV',72],['Streamlit',75],['DSA',82]] },
+  // { label: 'tools', items: [['Git',92],['OpenCV',72],['Streamlit',75],['DSA',97]] },
+  // { label: 'tools', items: [['Git',92],['OpenCV',72],['DSA',97]] },
   { label: 'exploring', items: [['System design',65],['Distributed systems',60],['WebGL / Three.js',35]] },
 ];
 

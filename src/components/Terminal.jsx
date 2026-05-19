@@ -9,7 +9,7 @@ const ALL_CMDS = [
   'education','experience','achievements','contact','hire',
   'ls','ls projects','cd projects','cat about.md','cat achievements.md',
   'cat refugeeroutes.md','cat captioning.md','cat rag.md','cat facemask.md',
-  'clear','secret','coffee',
+  'clear','secret','coffee','matcha',
 ];
 
 const QUICK_CMDS = ['help','projects','skills','experience','contact','hire','now'];
@@ -21,17 +21,112 @@ const PLACEHOLDERS = [
   'try: ls · cd projects · now...',
 ];
 
+// function CoffeeAnimation({ onDone }) {
+//   const [frame, setFrame] = useState(0);
+//   const frames = ['[          ] 0%','[##        ] 20%','[#####     ] 50%','[########  ] 80%','[##########] 100%'];
+//   useEffect(() => {
+//     if (frame >= frames.length) { onDone?.(); return; }
+//     const t = setTimeout(() => setFrame(f => f + 1), 200);
+//     return () => clearTimeout(t);
+//   }, [frame]);
+//   if (frame >= frames.length) return <span style={{color:'var(--green)'}}>☕ ready. keep going.</span>;
+//   return <span style={{color:'var(--amber)'}}>{frames[frame]}</span>;
+// }
 function CoffeeAnimation({ onDone }) {
   const [frame, setFrame] = useState(0);
-  const frames = ['[          ] 0%','[##        ] 20%','[#####     ] 50%','[########  ] 80%','[##########] 100%'];
+
+  const frames = [
+    '[          ] 0%',
+    '[##        ] 20%',
+    '[#####     ] 50%',
+    '[########  ] 80%',
+    '[##########] 100%'
+  ];
+
   useEffect(() => {
-    if (frame >= frames.length) { onDone?.(); return; }
+    if (frame >= frames.length) {
+      onDone?.();
+      return;
+    }
+
     const t = setTimeout(() => setFrame(f => f + 1), 200);
     return () => clearTimeout(t);
   }, [frame]);
-  if (frame >= frames.length) return <span style={{color:'var(--green)'}}>☕ ready. keep going.</span>;
-  return <span style={{color:'var(--amber)'}}>{frames[frame]}</span>;
+
+  const done = frame >= frames.length;
+
+  return (
+    <div style={{ color: done ? 'var(--green)' : 'var(--amber)' }}>
+      <div>
+        {done ? frames[frames.length - 1] : frames[frame]}
+      </div>
+
+      {done && (
+        <pre style={{ margin: '8px 0 0 0' }}>
+{String.raw`
+   )  (
+  (   ) )
+   ) ( (
+ _______
+|       |--.
+|       |  |
+'_______'--'
+
+☕ here u go. 
+`}
+        </pre>
+      )}
+    </div>
+  );
 }
+
+function MatchaAnimation({ onDone }) {
+  const [frame, setFrame] = useState(0);
+
+  const frames = [
+    '[          ] 0%',
+    '[##        ] 20%',
+    '[#####     ] 50%',
+    '[########  ] 80%',
+    '[##########] 100%'
+  ];
+
+  useEffect(() => {
+    if (frame >= frames.length) {
+      onDone?.();
+      return;
+    }
+
+    const t = setTimeout(() => setFrame(f => f + 1), 200);
+    return () => clearTimeout(t);
+  }, [frame]);
+
+  const done = frame >= frames.length;
+
+  return (
+    <div style={{ color: done ? 'var(--green)' : 'var(--amber)' }}>
+      <div>
+        {done ? frames[frames.length - 1] : frames[frame]}
+      </div>
+
+      {done && (
+        <pre style={{ margin: '8px 0 0 0' }}>
+{String.raw`
+       //
+     _//__
+    |//[] |
+    |[] []|
+    | ::: |
+    |_____|
+   
+`}
+        </pre>
+      )}
+    </div>
+  );
+}
+
+
 
 export default function Terminal() {
   const [lines, setLines] = useState([]);
@@ -70,7 +165,7 @@ export default function Terminal() {
 
     if (output[0]?.type === 'clear') {
       setLines([
-        { type: 'dim', text: 'cleared. type <span class="o-amber">help</span> to start over.' },
+        { type: 'dim', text: 'all clear 🫡' },
         { type: 'br' },
         { type: 'hints', chips: ['help','projects','about'] },
       ]);
@@ -90,14 +185,14 @@ export default function Terminal() {
   useEffect(() => {
     const bootLines = [
       { type: 'dim', text: 'initializing portfolio runtime...' },
-      { type: 'green', text: '✓ loaded 4 projects' },
+      { type: 'green', text: '✓ loaded all projects' },
       { type: 'green', text: '✓ indexed skills & experience' },
       { type: 'green', text: '✓ achievements verified' },
       { type: 'br' },
       { type: 'name', text: 'DIYA BANGERA' },
-      { type: 'dim', text: 'cs + ai student · ml engineer · top 100 @ salesforce futureforce' },
+      { type: 'dim', text: 'cse + ai undergrad · wannabe ml engineer · upcoming AMTS intern @ salesforce' },
       { type: 'br' },
-      { type: 'cream', text: 'welcome. type <span class="o-amber">help</span> to explore, or click a suggestion.' },
+      { type: 'cream', text: 'welcome :) type <span class="o-amber">help</span> to explore, or click a suggestion.' },
       { type: 'br' },
       { type: 'hints', chips: ['help','whoami','projects','skills','contact'] },
     ];
@@ -191,6 +286,12 @@ export default function Terminal() {
     if (line.type === 'coffee') return (
       <div key={i} className="line">
         <CoffeeAnimation />
+      </div>
+    );
+
+    if (line.type === 'matcha') return (
+      <div key={i} className="line">
+        <MatchaAnimation />
       </div>
     );
 

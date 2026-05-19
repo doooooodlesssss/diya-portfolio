@@ -1,6 +1,6 @@
 export function cmdHire() {
   return [
-    { type: 'head', text: 'why hire diya' },
+    { type: 'head', text: 'why hire me' },
     { type: 'br' },
     { type: 'metrics', items: [
       { value: 'Top 100', label: 'of 50,000+ applicants', sub: 'Salesforce Futureforce' },
@@ -9,13 +9,16 @@ export function cmdHire() {
       { value: '100%', label: 'NPTEL score', sub: 'IIT Kharagpur certification' },
     ]},
     { type: 'br' },
-    { type: 'cream', text: "I build things with real numbers attached. Every project above has a measurable outcome — not 'I improved performance' but by exactly how much and on what benchmark." },
+    { type: 'cream', text: "I like to build with real numbers attached, so almost every project has a measurable outcome." },
     { type: 'br' },
-    { type: 'cream', text: "I work across the full stack — PyTorch model design, FAISS retrieval, MongoDB aggregation, React dashboards. I don't hand off at the API boundary." },
+    {
+      type: 'cream',
+      text: `I work across the full stack: C++, PyTorch, TensorFlow, HuggingFace, MERN, REST API, AWS (run <span class="o-amber">skills</span> to know more)`
+    },
     { type: 'br' },
-    { type: 'cream', text: "I was top 100 out of 50,000+ for Salesforce Futureforce and drove the highest institutional Perplexity AI adoption in India. I compete hard and I follow through." },
-    { type: 'br' },
-    { type: 'cream', text: '→ run <span class="o-amber">contact</span> to reach me.' },
+    // { type: 'cream', text: "I was among the top 100 out of 50,000+ for Salesforce and drove the highest institutional adoption Perplexity AI in India." },
+    // { type: 'br' },
+    { type: 'cream', text: '→ run <span class="o-amber">contact</span> to reach (& potentially hire) me.' },
     { type: 'br' },
   ];
 }

@@ -9,7 +9,7 @@ import { cmdContact } from './contact.js';
 import { cmdHire } from './hire.js';
 import { cmdLs } from './ls.js';
 import { cmdNow } from './now.js';
-import { cmdSecret, cmdSudo, cmdCoffee, cmdExit } from './easter.js';
+import { cmdSecret, cmdSudo, cmdCoffee, cmdExit, cmdMatcha } from './easter.js';
 
 const REGISTRY = {
   help: cmdHelp,
@@ -31,6 +31,7 @@ const REGISTRY = {
   secret: cmdSecret,
   sudo: cmdSudo,
   coffee: cmdCoffee,
+  matcha: cmdMatcha,
   exit: cmdExit,
 };
 

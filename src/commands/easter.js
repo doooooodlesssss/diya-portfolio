@@ -26,10 +26,13 @@ export function cmdCoffee() {
   return [{ type: 'coffee' }]; // handled as animation in Terminal.jsx
 }
 
+export function cmdMatcha() {
+  return [{ type: 'matcha' }];
+}
+
 export function cmdExit() {
   return [
-    { type: 'dim', text: "you can't exit a portfolio. you're already here." },
-    { type: 'cream', text: `if you're done — run <span class="o-amber">contact</span> first.` },
-    // { type: 'cream', text: "if you're done — run <span class="o-amber">contact</span> first." },
+    { type: 'dim', text: "you can't exit a portfolio, you're already here :D" },
+    { type: 'cream', text: `if you're done : run <span class="o-amber">contact</span> (hehe)` },
   ];
 }

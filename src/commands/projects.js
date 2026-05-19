@@ -11,7 +11,7 @@ export function cmdProjects(args) {
   }
 
   return [
-    { type: 'head', text: 'projects' },
+    // { type: 'head', text: 'projects' },
     { type: 'br' },
     ...PROJECTS.map(p => ({
       type: 'project-card',

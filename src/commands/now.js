@@ -2,16 +2,16 @@ import { NOW } from '../data/resume.js';
 
 export function cmdNow() {
   return [
-    { type: 'head', text: 'now' },
+    { type: 'head', text: 'what im doing like now now' },
     { type: 'dim', text: `last updated: ${NOW.updated}` },
     { type: 'br' },
-    { type: 'cream', text: `<span class="o-amber">building</span>   ${NOW.building}` },
+    { type: 'cream', text: `<span class="o-amber">building: </span>   ${NOW.building}` },
     { type: 'br' },
-    { type: 'cream', text: `<span class="o-amber">reading</span>    ${NOW.reading}` },
+    { type: 'cream', text: `<span class="o-amber">reading: </span>    ${NOW.reading}` },
     { type: 'br' },
-    { type: 'cream', text: `<span class="o-amber">thinking</span>   ${NOW.thinking}` },
+    { type: 'cream', text: `<span class="o-amber">thinking: </span>   ${NOW.thinking}` },
     { type: 'br' },
-    { type: 'cream', text: `<span class="o-amber">next</span>       ${NOW.next}` },
+    { type: 'cream', text: `<span class="o-amber">next: </span>       ${NOW.next}` },
     { type: 'br' },
     { type: 'hints', chips: ['projects','experience','contact'] },
   ];
