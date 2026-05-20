@@ -181,7 +181,6 @@ export default function Terminal() {
     ]);
   }, []);
 
-  // boot
   useEffect(() => {
     const bootLines = [
       { type: 'dim', text: 'initializing portfolio runtime...' },
@@ -189,10 +188,10 @@ export default function Terminal() {
       { type: 'green', text: '✓ indexed skills & experience' },
       { type: 'green', text: '✓ achievements verified' },
       { type: 'br' },
-      { type: 'name', text: 'DIYA BANGERA' },
+      { type: 'name', text: 'DIYA BANGERA 𓅭' },
       { type: 'dim', text: 'cse + ai undergrad · wannabe ml engineer · upcoming AMTS intern @ salesforce' },
       { type: 'br' },
-      { type: 'cream', text: 'welcome :) type <span class="o-amber">help</span> to explore, or click a suggestion.' },
+      { type: 'cream', text: 'welcome :) type <span class="o-amber">help</span> to explore, or click a suggestion below:' },
       { type: 'br' },
       { type: 'hints', chips: ['help','whoami','projects','skills','contact'] },
     ];
@@ -201,7 +200,6 @@ export default function Terminal() {
     });
   }, []);
 
-  // scroll
   useEffect(() => {
     if (outputRef.current) outputRef.current.scrollTop = outputRef.current.scrollHeight;
   }, [lines]);

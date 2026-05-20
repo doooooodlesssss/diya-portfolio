@@ -8,10 +8,10 @@ export const ME = {
 };
 
 export const NOW = {
-  building: 'Preparing for the Salesforce AMTS internship (imposter syndrome is hard)',
+  building: 'preparing for the Salesforce AMTS internship (imposter syndrome is hard)',
   reading: 'Norwegian Wood by Murakami (umm-)',
-  thinking: 'Whats trending on Moltbook rn',
-  next: 'Submit BTP paper draft by eom',
+  thinking: 'whats trending on Moltbook rn',
+  next: 'submit BTP paper draft by eom',
   updated: 'May 2026',
 };
 // ↑ Update this every month. It's the signal that you're alive and working.
@@ -91,12 +91,12 @@ export const SKILLS = [
 ];
 
 export const ACHIEVEMENTS = [
-  { icon: '🏆', title: 'Salesforce Futureforce Tech Accelerator 2025', desc: 'Top 100 from 50,000+ global applicants' },
-  { icon: '📈', title: 'Perplexity AI Campus Champion', desc: 'Drove adoption to 1,500+ users at NSUT — highest institutional uptake nationally' },
-  { icon: '🎓', title: 'NPTEL: Psychology of Learning (IIT Kharagpur)', desc: 'Score: 100%' },
-  { icon: '🌐', title: 'Google Women Techmakers Program', desc: 'Shortlisted for global initiative recognizing women in tech' },
-  { icon: '💻', title: 'GSSoC Extended 2024', desc: 'Open-source contributions with 200+ developers' },
-  { icon: '☁️', title: 'Microsoft Azure Cognitive Services', desc: 'Built CV app for scalable image recognition workflows' },
+  { icon: '☆', title: 'Salesforce Futureforce Tech Accelerator, 2025', desc: 'Top 100 from 50,000+ applicants' },
+  { icon: '☆', title: 'Perplexity AI Campus Champion', desc: 'Drove adoption to 1,500+ users at NSUT, with highest institutional uptake nationally' },
+  { icon: '☆', title: 'NPTEL: Psychology of Learning (IIT Kharagpur)', desc: 'Score: 100%' },
+  { icon: '☆', title: 'Google Women Techmakers Program', desc: 'Shortlisted for global initiative recognizing women in tech' },
+  { icon: '☆', title: 'GSSoC Extended 2024', desc: 'Open-source contributions alongside 200+ developers' },
+  { icon: '☆', title: 'Microsoft Azure Cognitive Services', desc: 'Built CV app for scalable image recognition workflows' },
 ];
 
 export const EXPERIENCE = [
