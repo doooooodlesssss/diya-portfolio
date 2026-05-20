@@ -4,8 +4,8 @@ function badge(t, c) { return `<span class="badge badge-${c}">${t}</span>`; }
 
 export function cmdExperience() {
   const lines = [
-    { type: 'head', text: 'experience' },
-    { type: 'br' },
+    // { type: 'head', text: 'experience' },
+    // { type: 'br' },
   ];
   EXPERIENCE.forEach(e => {
     lines.push({ type: 'cream', text: `<span class="o-amber o-bold">${e.role}</span> <span class="o-dim">@ ${e.org}</span>` });
