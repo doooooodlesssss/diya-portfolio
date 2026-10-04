@@ -4,7 +4,7 @@ export function cmdEducation() {
       // { type: 'br' },
       { type: 'cream', text: '<span class="o-amber o-bold">B.Tech, Computer Science</span> <span class="o-dim">· specialization in Artificial Intelligence</span>' },
       { type: 'cream', text: 'Netaji Subhas University of Technology (NSUT), New Delhi' },
-      { type: 'green', text: 'CGPA: 8.09 <span class="o-dim">(up to Semester 5)</span>' },
+      { type: 'green', text: 'CGPA: 8.33 <span class="o-dim">(up to Semester 6)</span>' },
       { type: 'dim', text: 'July 2023 – May 2027 (expected)' },
       { type: 'br' },
       { type: 'amber', text: 'School' },
