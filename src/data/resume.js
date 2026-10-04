@@ -8,11 +8,11 @@ export const ME = {
 };
 
 export const NOW = {
-  building: 'preparing for the Salesforce AMTS internship (imposter syndrome is hard)',
-  reading: 'Norwegian Wood by Murakami (umm-)',
-  thinking: 'whats trending on Moltbook rn',
-  next: 'submit BTP paper draft by eom',
-  updated: 'May 2026',
+  building: 'preparing for first real job (imposter syndrome is hard)',
+  reading: '1984 by George Orwell (umm-)',
+  thinking: 'whats trending on Moltbook',
+  next: 'submit btp draft',
+  updated: 'Oct 2026',
 };
 // ↑ Update this every month. It's the signal that you're alive and working.
 
@@ -100,6 +100,7 @@ export const ACHIEVEMENTS = [
 ];
 
 export const EXPERIENCE = [
+  { role: 'AMTS Intern, 2026', org: 'Salesforce', period: 'May 2026 - July 2026', tags: [['FIRST BIG TECH INTERN !','green']], desc: 'Engineered an L2 insights feature for an enterprise capacity planning platform that generates recommendations to improve draft plans by leveraging historical planning data, statistical modeling, and domain-specific planning insights' },
   { role: 'Salesforce Futureforce Tech Accelerator, 2025', org: 'Salesforce', period: '2025', tags: [['Top 100 / 50,000+','green']], desc: 'Selected as one of top 100 candidates in the accelerator program for high-potential engineering talent.' },
   { role: 'Amazon WOW Program: Member & Mentee', org: 'Amazon', period: 'Sep 2023 – Jul 2025', tags: [['Mentorship','blue']], desc: '10+ mentor-led sessions in SWE and ML. DSA, algorithms, system design, industry-grade problem solving.' },
   { role: 'Executive Member', org: 'Google Developer Student Clubs, NSUT', period: 'Sep 2024 – current', tags: [['AI/ML','amber'],['Web Dev','blue']], desc: 'AI/ML/DL and web dev workshops, hackathons, technical sessions.' },
