@@ -183,7 +183,7 @@ export default function Terminal() {
 
   useEffect(() => {
     const bootLines = [
-      { type: 'dim', text: 'initializing portfolio runtime...' },
+      // { type: 'dim', text: 'initializing portfolio runtime...' },
       // { type: 'green', text: '✓ loaded all projects' },
       // { type: 'green', text: '✓ indexed skills & experience' },
       // { type: 'green', text: '✓ achievements verified' },
