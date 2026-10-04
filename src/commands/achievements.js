@@ -2,8 +2,8 @@ import { ACHIEVEMENTS } from '../data/resume.js';
 
 export function cmdAchievements() {
   const lines = [
-    { type: 'head', text: 'achievements & certifications' },
-    { type: 'br' },
+    // { type: 'head', text: 'achievements & certifications' },
+    // { type: 'br' },
   ];
   ACHIEVEMENTS.forEach(a => {
     lines.push({ type: 'amber', text: `${a.icon} ${a.title}` });
