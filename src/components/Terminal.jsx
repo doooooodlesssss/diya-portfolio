@@ -12,7 +12,7 @@ const ALL_CMDS = [
   'clear','secret','coffee','matcha',
 ];
 
-const QUICK_CMDS = ['help','projects','skills','experience','contact','hire','now'];
+const QUICK_CMDS = ['help','projects','skills','experience','contact'];
 
 const PLACEHOLDERS = [
   'type a command...',
@@ -184,16 +184,17 @@ export default function Terminal() {
   useEffect(() => {
     const bootLines = [
       { type: 'dim', text: 'initializing portfolio runtime...' },
-      { type: 'green', text: '✓ loaded all projects' },
-      { type: 'green', text: '✓ indexed skills & experience' },
-      { type: 'green', text: '✓ achievements verified' },
+      // { type: 'green', text: '✓ loaded all projects' },
+      // { type: 'green', text: '✓ indexed skills & experience' },
+      // { type: 'green', text: '✓ achievements verified' },
       { type: 'br' },
       { type: 'name', text: 'DIYA BANGERA 𓅭' },
-      { type: 'dim', text: 'cse + ai undergrad · wannabe ml engineer · upcoming AMTS intern @ salesforce' },
+      { type: 'dim', text: 'cse + ai senior · ml engineer · upcoming AMTS @ salesforce' },
       { type: 'br' },
-      { type: 'cream', text: 'welcome :) type <span class="o-amber">help</span> to explore, or click a suggestion below:' },
+      // { type: 'cream', text: 'welcome :) type <span class="o-amber">help</span> to explore, or click a suggestion below:' },
+      { type: 'cream', text: 'welcome :) type a command to explore, or just click a suggestion:' },
       { type: 'br' },
-      { type: 'hints', chips: ['help','whoami','projects','skills','contact'] },
+      { type: 'hints', chips: ['help','whoami','projects','experience', 'skills','contact'] },
     ];
     bootLines.forEach((line, i) => {
       setTimeout(() => setLines(prev => [...prev, line]), i * 110);
