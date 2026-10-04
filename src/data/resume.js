@@ -104,7 +104,7 @@ export const EXPERIENCE = [
   { role: 'Salesforce Futureforce Tech Accelerator, 2025', org: 'Salesforce', period: '2025', tags: [['Top 100 / 50,000+','green']], desc: 'Selected as one of top 100 candidates in the accelerator program for high-potential engineering talent.' },
   { role: 'Amazon WOW Program: Member & Mentee', org: 'Amazon', period: 'Sep 2023 – Jul 2025', tags: [['Mentorship','blue']], desc: '10+ mentor-led sessions in SWE and ML. DSA, algorithms, system design, industry-grade problem solving.' },
   // { role: 'Executive Member', org: 'Google Developer Student Clubs, NSUT', period: 'Sep 2024 – current', tags: [['AI/ML','amber'],['Web Dev','blue']], desc: 'AI/ML/DL and web dev workshops, hackathons, technical sessions.' },
-  { role: 'GSSoC Extended 2024', org: 'GirlScript Summer of Code', period: '2024', tags: [['Open Source','dim']], desc: 'Collaborative open-source development alongside 200+ developers.' },
+  // { role: 'GSSoC Extended 2024', org: 'GirlScript Summer of Code', period: '2024', tags: [['Open Source','dim']], desc: 'Collaborative open-source development alongside 200+ developers.' },
   // { role: 'Graphic Designer', org: 'Crosslinks, NSUT', period: 'Sep 2023 – Dec 2024', tags: [['Design','dim']], desc: '50+ event creatives. Raised visibility and turnout across university events.' },
   // { role: 'Executive Committee Member', org: 'Rotaract NSIT', period: 'ongoing', tags: [['Leadership','dim']], desc: 'Led teams for social impact initiatives benefiting 200+ people.' },
   // { role: 'Volunteer', org: 'National Service Scheme (NSS)', period: 'ongoing', tags: [['Community','dim']], desc: '105+ volunteer hours in educational outreach and community upliftment.' },
